@@ -1,0 +1,25 @@
+Heres a list of the 10 HTML tags and 5 CSS properties i’ve used, as well as a brief description of how i chose to use JavaScript and Bootstrap.
+
+//(10) HTML tags//
+<link>;
+<script>;
+<div>;
+<header>;
+<nav>;
+<section>;
+<ul>;
+<li>;
+<img>;
+<span>;
+
+//(5) CSS properties//
+background-image;
+display;
+transform;
+box-shadow;
+z-index;
+
+//JavaScript and Bootstrap//
+
+JavaScript: Was used for a cat-themed loader animation and a toggle function for the navigation menu
+Bootstrap: Integrated for responsive design and pre-built CSS/JS components to enhance the website's styling and interactivity
