@@ -2,11 +2,18 @@
 
 This is a simple C program that prompts the user for their name and prints a personalized greeting.
 
-## Compilation Instructions
+## How to run the Program
 
-1. Open your terminal and navigate to the directory containing `hello.c`.
-
-2. Run the following command to compile the program:
+Open your terminal and run the program with
 
    ```bash
-   $ make hello
+   $ ./hello
+   ```
+
+After running the program, it will ask for your name. For example:
+
+   ```bash
+What's your name? Julia
+hello, Julia
+   ```
+
