@@ -57,6 +57,68 @@ $ ./caesar 1 2 3
 Usage: ./caesar key
   ```
 
+# cash
+
+# credit
+
+# dna
+
+# fiftyville
+
+# filter-less
+
+# filter-more
+
+# finance
+
+# homepage
+
+# inheritance
+
+# mario-less
+
+# mario-more
+
+# movies
+
+# plurality
+
+# project
+
+# readability
+
+# recover
+
+# runoff
+
+# scrabble
+
+# sentimental-cash
+
+# sentimental-credit
+
+# sentimental-hello
+
+# sentimental-mario-less
+
+# sentimental-mario-more
+
+# sentimental-readability
+
+# songs
+
+# sort
+
+# speller
+
+# substitution
+
+# tideman
+
+# trivia
+
+# volume
+
 # hello.c
 
 This is a simple C program that prompts the user for their name and prints a personalized greeting.
