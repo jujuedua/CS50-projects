@@ -13,7 +13,7 @@ This is a simple Flask web application that allows users to add and view birthda
    ```bash
    flask run
    ```
--Open your web browser and go to http://127.0.0.1:5000/ to access the application.
+-Open the link and it will direct you to the birthdays website.
 
 # hello.c
 
