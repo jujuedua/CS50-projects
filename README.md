@@ -1,3 +1,5 @@
+# **Explanation on how each CS50 project works**
+
 # **birthday**
 
 This is a simple Flask web application that allows users to add and view birthdays.
@@ -180,6 +182,34 @@ SELECT * FROM crime_scene_reports WHERE month = X AND day = Y;
 -Solve the Mystery: Identify the criminal and their escape plan using evidence collected from the database.
 
 # **filter-less**
+
+Filter-Less is a command-line image processing program that applies various filters to BMP images. Users can apply grayscale, sepia, reflection, and blur effects to images by specifying the desired filter flag.
+
+## Usage
+
+To use Filter-Less, compile the program and execute it with the appropriate arguments:
+
+  ```bash
+$ make filter
+$ ./filter [flag] infile outfile
+  ```
+-[flag] determines which filter to apply:
+
+-g : Convert the image to grayscale
+
+-s : Apply a sepia tone
+
+-r : Reflect the image horizontally
+
+-b : Blur the image
+
+-infile is the input image file (BMP format).
+
+outfile is the output image file (BMP format).
+
+## Example Usage
+
+$ ./filter -g ./images/courtyard.bmp ./images/courtyard-grayscale.bmp
 
 # **filter-more**
 
