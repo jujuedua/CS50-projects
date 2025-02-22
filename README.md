@@ -262,11 +262,117 @@ $ ./filter -e ./images/yard.bmp ./images/yard-edges.bmp
 
 # **finance**
 
+C$50 Finance is a web application that allows users to manage their stock portfolios by "buying" and "selling" stocks in a simulated environment. This application fetches real-time stock prices from an external API to facilitate transactions.
+
+## Running the Application
+
+-Start Flask’s built-in web server:
+
+  ```bash
+flask run
+  ```
+
+-Visit the URL outputted by Flask to interact with the application.
+
+-Note that login and registration are required to access portfolio management features.
+
+## Features
+
+-User Authentication: Register and log in to track your stock portfolio.
+
+-Stock Lookup: Search for real-time stock prices via IEX Cloud API.
+
+-Buy Stocks: Purchase stocks using available virtual funds.
+
+-Sell Stocks: Sell stocks to update your portfolio balance.
+
+-Transaction History: View past trades and their details.
+
 # **homepage**
+
+This project is a simple homepage built using Flask. It introduces the creator, their favorite hobby or extracurricular activity, or any other personal interest.
+
+## Running the Application
+
+-Start Flask’s built-in web server:
+
+  ```bash
+flask run
+  ```
+
+-Visit the URL outputted by Flask to interact with the homepage.
 
 # **inheritance**
 
+This project simulates genetic inheritance across multiple generations using a simple program that models blood type inheritance.
+
+## Running the Application
+
+-Execute the program:
+
+   ```bash
+./inheritance
+   ```
+
+-The program simulates inheritance of blood types across multiple generations and outputs the result in a hierarchical format.
+
+## Example Output
+
+   ```bash
+$ ./inheritance
+Child (Generation 0): blood type OB
+    Parent (Generation 1): blood type OA
+        Grandparent (Generation 2): blood type OA
+        Grandparent (Generation 2): blood type AO
+    Parent (Generation 1): blood type OB
+        Grandparent (Generation 2): blood type AO
+        Grandparent (Generation 2): blood type BB
+
+$ ./inheritance
+Child (Generation 0): blood type AO
+    Parent (Generation 1): blood type AA
+        Grandparent (Generation 2): blood type AA
+        Grandparent (Generation 2): blood type AA
+    Parent (Generation 1): blood type AO
+        Grandparent (Generation 2): blood type AO
+        Grandparent (Generation 2): blood type OO
+   ```
+
 # **mario-less**
+
+This project is a simple C program that prints a right-aligned pyramid of hashes (#) based on user input, similar to the pyramids in Super Mario Bros.
+
+## Running the Application
+
+-Execute the program:
+
+   ```bash
+./mario
+   ```
+
+-Enter a height value when prompted. The program will generate a right-aligned pyramid of that height.
+
+## Example Output
+
+   ```bash
+$ ./mario
+Height: 8
+          #
+         ##
+        ###
+       ####
+      #####
+     ######
+    #######
+########
+
+$ ./mario
+Height: -3
+Height: 3
+     #
+    ##
+###
+   ```
 
 # **mario-more**
 
