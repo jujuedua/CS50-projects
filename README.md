@@ -1,4 +1,4 @@
-# birthday
+# **birthday**
 
 This is a simple Flask web application that allows users to add and view birthdays.
 
@@ -17,7 +17,7 @@ This is a simple Flask web application that allows users to add and view birthda
    ```
 -Open the link and it will direct you to the birthdays website.
 
-# caesar
+# **caesar**
 
 This program encrypts messages using the Caesar cipher, a simple substitution cipher that shifts letters in the alphabet by a given key. Non-alphabetical characters remain unchanged.
 
@@ -49,7 +49,7 @@ Since shifting by 26 (the length of the alphabet) results in no change, the outp
 
 ### Invalid Usage:
 
-```bash
+  ```bash
 $ ./caesar HELLO
 Usage: ./caesar key
 
@@ -57,69 +57,125 @@ $ ./caesar 1 2 3
 Usage: ./caesar key
   ```
 
-# cash
+# **cash**
 
-# credit
+This program calculates the minimum number of coins required to give a specified amount of change. The program assumes US coin denominations (quarters, dimes, nickels, and pennies).
 
-# dna
+## Usage
+ 
+  ```bash
+./cash
+  ```
 
-# fiftyville
+-The program prompts the user to enter the amount of change owed (in cents).
 
-# filter-less
+-It then calculates and outputs the minimum number of coins needed.
 
-# filter-more
+## Example Usage
 
-# finance
+```bash
+$ ./cash
+Change owed: 25
+1
 
-# homepage
+$ ./cash
+Change owed: 70
+4
+  ```
 
-# inheritance
+# **credit**
 
-# mario-less
+This program validates credit card numbers using the Luhn algorithm and determines the card's type based on its number.
 
-# mario-more
+## Usage
 
-# movies
+  ```bash
+./credit
+  ```
 
-# plurality
+-The program prompts the user to enter a credit card number.
 
-# project
+-It validates the number and determines the card type (e.g., VISA, MASTERCARD, AMEX) or marks it as INVALID.
 
-# readability
+## Example Usage
 
-# recover
+```bash
+$ ./credit
+Number: 4003-6000-0000-0014
+Number: foo
+Number: 4003600000000014
+VISA
+  ```
 
-# runoff
+-If an invalid argument is provided (e.g., non-numeric or special characters), the program will reapt itself until its valid or invalid.
 
-# scrabble
+```bash
+$ ./credit
+Number: 6176292929
+INVALID
+  ```
 
-# sentimental-cash
+ -Here are a [few card numbers](https://developer.paypal.com/api/nvp-soap/payflow/integration-guide/test-transactions/#standard-test-cards) that PayPal recommends for testing.
 
-# sentimental-credit
+# **dna**
 
-# sentimental-hello
+# **fiftyville**
 
-# sentimental-mario-less
+# **filter-less**
 
-# sentimental-mario-more
+# **filter-more**
 
-# sentimental-readability
+# **finance**
 
-# songs
+# **homepage**
 
-# sort
+# **inheritance**
 
-# speller
+# **mario-less**
 
-# substitution
+# **mario-more**
 
-# tideman
+# **movies**
 
-# trivia
+# **plurality**
 
-# volume
+# **project**
 
-# hello.c
+# **readability**
+
+# **recover**
+
+# **runoff**
+
+# **scrabble**
+
+# **sentimental-cash**
+
+# **sentimental-credit**
+
+# **sentimental-hello**
+
+# **sentimental-mario-less**
+
+# **sentimental-mario-more**
+
+# **sentimental-readability**
+
+# **songs**
+
+# **sort**
+
+# **speller**
+
+# **substitution**
+
+# **tideman**
+
+# **trivia**
+
+# **volume**
+
+# **hello.c**
 
 This is a simple C program that prompts the user for their name and prints a personalized greeting.
 
