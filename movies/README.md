@@ -1,3 +1,11 @@
+# **movies**
+
+This project is a SQLite database that stores information about movies, including their titles, release years, directors, actors, and ratings
+
+## Database Structure
+
+-The database consists of the following tables:
+
 ### movies
 
 -Stores movie information.
