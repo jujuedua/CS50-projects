@@ -290,17 +290,17 @@ flask run
 
 # **homepage**
 
-This project is a simple homepage built using Flask. It introduces the creator, their favorite hobby or extracurricular activity, or any other personal interest.
+This project involves creating a simple homepage using HTML, CSS, and JavaScript. The homepage can introduce yourself, your favorite hobby, or any topic of interest. It is designed to be responsive and can be viewed on various devices.
 
 ## Running the Application
 
--Start Flask’s built-in web server:
+-Start a simple HTTP server using:
 
   ```bash
-flask run
+http-server
   ```
 
--Visit the URL outputted by Flask to interact with the homepage.
+-Click on the first link presented by http-server to open your webpage in a new tab.
 
 # **inheritance**
 
