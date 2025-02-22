@@ -29,3 +29,11 @@ $ ./filter [flag] infile outfile
    ```bash
 Usage: ./filter [flag] infile outfile
    ```
+
+## Example Usage
+
+  ```bash
+$ ./filter -g ./images/courtyard.bmp ./images/courtyard-grayscale.bmp
+  ```
+![courtyard](https://github.com/user-attachments/assets/7f9abd52-3011-4568-a5ba-f247b3e136a3)
+![courtyard-grayscale](https://github.com/user-attachments/assets/05f38768-e307-4a72-9253-598837180626)
