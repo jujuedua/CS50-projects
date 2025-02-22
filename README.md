@@ -119,7 +119,65 @@ INVALID
 
 # **dna**
 
+This program identifies individuals based on DNA sequence analysis. Given a database of individuals and their DNA sequence profiles, the program compares a given DNA sequence against known profiles to find a match.
+
+## Usage
+
+  ```bash
+python dna.py <database.csv> <sequence.txt>
+  ```
+
+<database.csv>: A CSV file containing individuals' names and their short tandem repeat (STR) counts.
+
+<sequence.txt>: A text file containing a DNA sequence.
+
+## Example Usage
+
+  ```bash
+$ python dna.py databases/small.csv sequences/1.txt
+Bob
+
+$ python dna.py databases/small.csv sequences/2.txt
+No match
+
+$ python dna.py databases/small.csv sequences/4.txt
+Alice
+
+$ python dna.py databases/large.csv sequences/17.txt
+Harry
+
+$ python dna.py databases/large.csv sequences/20.txt
+No match
+  ```
+
 # **fiftyville**
+
+Fiftyville is an SQL-based crime investigation project where you analyze a database to solve a mystery. The goal is to use SQL queries to investigate a crime, track the culprit, and understand the events leading up to and following the incident.
+
+## How It Works
+
+-Access the Database: Use SQLite to interact with the database.
+
+  ```bash
+sqlite3 fiftyville.db
+  ```
+-Explore the Data: Use SQL queries to retrieve useful information. Start by listing available tables:
+
+  ```bash
+.tables
+  ```
+
+-Investigate the Crime Scene: Query the crime_scene_reports table to find details about the crime.
+
+  ```bash
+SELECT * FROM crime_scene_reports WHERE month = X AND day = Y;
+  ```
+
+-Follow the Clues: Use logical deductions to analyze interviews, phone calls, transactions, and travel history.
+
+-Track the Suspect: Use SQL queries to narrow down potential suspects and confirm their movements.
+
+-Solve the Mystery: Identify the criminal and their escape plan using evidence collected from the database.
 
 # **filter-less**
 
