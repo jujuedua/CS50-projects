@@ -31,3 +31,14 @@ INVALID
   ```
 
  -Here are a [few card numbers](https://developer.paypal.com/api/nvp-soap/payflow/integration-guide/test-transactions/#standard-test-cards) that PayPal recommends for testing.
+
+ ## Card Type Identification
+
+-AMEX: 15-digit numbers starting with 34 or 37.
+
+-MASTERCARD: 16-digit numbers starting with 51, 52, 53, 54, or 55.
+
+-VISA: 13- or 16-digit numbers starting with 4.
+
+-INVALID: Any number that does not match the above criteria or fails the Luhn algorithm.
+
