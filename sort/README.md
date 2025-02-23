@@ -17,9 +17,9 @@ In this problem, you will analyze three compiled sorting programs—sort1, sort2
 -Run each sorting program with different input files and observe the output.
 
    ```bash
-./sort1 numbers.txt
-./sort2 numbers.txt
-./sort3 numbers.txt
+./sort1 random10000.txt
+./sort2 random10000.txt
+./sort3 random10000.txt
    ```
 
 -Check the number of comparisons and swaps performed.
@@ -27,7 +27,9 @@ In this problem, you will analyze three compiled sorting programs—sort1, sort2
 -Time the execution for different input sizes:
 
    ```bash
-time ./sort1 large_numbers.txt
+time ./sort1 random10000.txt
+
+time ./sort1 sorted10000.txt
    ```
 
 ### Look for patterns:
