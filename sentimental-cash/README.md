@@ -1,6 +1,6 @@
 # **sentimental-cash**
 
-Sentimental Cash is a program that calculates the minimum number of coins needed to make change for a given amount in dollars. The program takes user input, processes the amount, and returns the smallest number of coins required.
+This project is a program that calculates the minimum number of coins needed to make change for a given amount in dollars. The program takes user input, processes the amount, and returns the smallest number of coins required.
 
 ## Running the Program
 
