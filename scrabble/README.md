@@ -1,6 +1,6 @@
 # **scrabble**
 
-Scrabble is a program that simulates a word-based game where players enter words, and the program calculates the score based on the Scrabble letter values. The player with the highest score wins. If both players have the same score, the game ends in a tie.
+This project  is a program that simulates a word-based game where players enter words, and the program calculates the score based on the Scrabble letter values. The player with the highest score wins. If both players have the same score, the game ends in a tie.
 
 ## Letter Values
 
