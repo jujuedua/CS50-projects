@@ -56,3 +56,5 @@ SELECT name FROM songs;
 | Be Alright                                              |                                         
 +---------------------------------------------------------+
    ```
+
+-See [this SQL keywords reference](https://www.w3schools.com/sql/sql_ref_keywords.asp) for some SQL syntax that may be helpful!
