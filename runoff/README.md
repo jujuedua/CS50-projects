@@ -1,6 +1,6 @@
 # **runoff**
 
-Runoff is a program that simulates an election using ranked-choice voting. Voters rank candidates in order of preference, and the program determines the winner through multiple rounds of elimination until a candidate receives more than half of the votes.
+This project  is a program that simulates an election using ranked-choice voting. Voters rank candidates in order of preference, and the program determines the winner through multiple rounds of elimination until a candidate receives more than half of the votes.
 
 ## Running the Program
 
