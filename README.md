@@ -119,6 +119,16 @@ INVALID
 
  -Here are a [few card numbers](https://developer.paypal.com/api/nvp-soap/payflow/integration-guide/test-transactions/#standard-test-cards) that PayPal recommends for testing.
 
+ ## Card Type Identification
+
+-AMEX: 15-digit numbers starting with 34 or 37.
+
+-MASTERCARD: 16-digit numbers starting with 51, 52, 53, 54, or 55.
+
+-VISA: 13- or 16-digit numbers starting with 4.
+
+-INVALID: Any number that does not match the above criteria or fails the Luhn algorithm.
+
 # **dna**
 
 This program identifies individuals based on DNA sequence analysis. Given a database of individuals and their DNA sequence profiles, the program compares a given DNA sequence against known profiles to find a match.
@@ -587,13 +597,198 @@ Grade 16+
 
 # **recover**
 
+This project is a program designed to restore deleted JPEG images from a raw memory card image. When files are deleted, they are not immediately erased from the memory; rather, the system marks their space as available for new data. This program scans the raw memory card file and extracts recoverable JPEG images.
+
+## Running the Program
+
+-To recover deleted photos from a memory card image:
+
+   ```bash
+./recover card.raw
+   ```
+
+-This will scan card.raw and recover JPEG images, saving them as separate files in the same directory.
+
 # **runoff**
+
+This project is a program that simulates an election using ranked-choice voting. Voters rank candidates in order of preference, and the program determines the winner through multiple rounds of elimination until a candidate receives more than half of the votes.
+
+## Running the Program
+
+-To execute the program with a list of candidates:
+
+   ```bash
+./runoff Julia Bob Zack
+   ```
+
+-Users will be prompted to enter their ranked preferences for each voter.
+
+-Elections with up to 9 candidates (the maximum allowed).
+
+-Correctly processing votes by candidate name.
+
+-Rejecting invalid votes for non-listed candidates.
+
+-Declaring a winner when only one candidate remains.
+
+-Not eliminating candidates in case of a tie between all remaining candidates.
+
+## Usage
+
+-Example scenario with three voters:
+
+   ```bash
+$ ./runoff Julia Bob Zack
+Number of voters: 3
+Rank 1: Julia
+Rank 2: Bob
+Rank 3: Zack
+
+Rank 1: Bob
+Rank 2: Julia
+Rank 3: Zack
+
+Rank 1: Julia
+Rank 2: Bob
+Rank 3: Zack
+
+Julia
+   ```
+
+-If an invalid vote is entered:
+
+   ```bash
+$ ./runoff Julia Bob Zack
+Number of voters: 3
+Rank 1: John
+Invalid vote.
+   ```
+
+-If run without candidates:
+
+   ```bash
+$ ./runoff
+Usage: runoff [candidate ...]
+   ```
 
 # **scrabble**
 
+This project is a program that simulates a word-based game where players enter words, and the program calculates the score based on the Scrabble letter values. The player with the highest score wins. If both players have the same score, the game ends in a tie.
+
+## Letter Values
+
+The point values assigned to each letter are as follows:
+
+   ```bash
+| A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W | X | Y | Z |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | 3 | 3 | 2 | 1 | 4 | 2 | 4 | 1 | 8 | 5 | 1 | 3 | 1 | 1 | 3 |10 | 1 | 1 | 1 | 1 | 4 | 4 | 8 | 4 |10 |
+   ```
+
+## Running the Program
+
+-To execute the program:
+
+   ```bash
+./scrabble
+   ```
+
+-Players will be prompted to enter their words, and the program will determine the winner.
+
+### Example Outputs
+
+   ```bash
+$ ./scrabble
+Player 1: Question?
+Player 2: Question!
+Tie!
+
+$ ./scrabble
+Player 1: red
+Player 2: wheelbarrow
+Player 2 wins!
+
+$ ./scrabble
+Player 1: COMPUTER
+Player 2: science
+Player 1 wins!
+
+$ ./scrabble
+Player 1: Scrabble
+Player 2: wiNNeR
+Player 1 wins!
+   ```
+
 # **sentimental-cash**
 
+This project is a program that calculates the minimum number of coins needed to make change for a given amount in dollars. The program takes user input, processes the amount, and returns the smallest number of coins required.
+
+## Running the Program
+
+-To execute the program:
+
+   ```bash
+python cash.py
+   ```
+
+## Example Outputs
+
+   ```bash
+$ python cash.py
+Change: 0.41
+4
+
+$ python cash.py
+Change: 0.01
+1
+
+$ python cash.py
+Change: 0.15
+2
+
+$ python cash.py
+Change: 1.60
+7
+   ```
+
 # **sentimental-credit**
+
+This project is a program that validates credit card numbers based on industry standards. The program determines the type of credit card (AMEX, MASTERCARD, VISA) or marks it as INVALID if the number does not meet the required criteria.
+
+## Running the Program
+
+-To execute the program:
+
+   ```bash
+python credit.py
+   ```
+
+## Example Outputs
+
+   ```bash
+$ python credit.py
+Number: 378282246310005
+AMEX
+
+$ python credit.py
+Number: 5555555555554444
+MASTERCARD
+
+$ python credit.py
+Number: 1234567890
+INVALID
+   ```
+ -Here are a [few card numbers](https://developer.paypal.com/api/nvp-soap/payflow/integration-guide/test-transactions/#standard-test-cards) that PayPal recommends for testing.
+
+## Card Type Identification
+
+-AMEX: 15-digit numbers starting with 34 or 37.
+
+-MASTERCARD: 16-digit numbers starting with 51, 52, 53, 54, or 55.
+
+-VISA: 13- or 16-digit numbers starting with 4.
+
+-INVALID: Any number that does not match the above criteria or fails the Luhn algorithm.
 
 # **sentimental-hello**
 
