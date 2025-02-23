@@ -27,29 +27,29 @@ Runoff is a program that simulates an election using ranked-choice voting. Voter
 -Example scenario with three voters:
 
    ```bash
-$ ./runoff Alice Bob Charlie
+$ ./runoff Julia Bob Zack
 Number of voters: 3
-Rank 1: Alice
+Rank 1: Julia
 Rank 2: Bob
-Rank 3: Charlie
+Rank 3: Zack
 
 Rank 1: Bob
-Rank 2: Alice
-Rank 3: Charlie
+Rank 2: Julia
+Rank 3: Zack
 
-Rank 1: Alice
+Rank 1: Julia
 Rank 2: Bob
-Rank 3: Charlie
+Rank 3: Zack
 
-Alice
+Julia
    ```
 
 -If an invalid vote is entered:
 
    ```bash
-$ ./runoff Alice Bob Charlie
+$ ./runoff Julia Bob Zack
 Number of voters: 3
-Rank 1: David
+Rank 1: John
 Invalid vote.
    ```
 
