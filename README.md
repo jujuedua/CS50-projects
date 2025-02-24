@@ -1013,13 +1013,209 @@ time ./sort1 sorted10000.txt
 
 # **speller**
 
+This program is designed to check the spelling of words in a given text file using a preloaded dictionary. Your goal is to implement the fastest spell checker possible, prioritizing real-world execution time over theoretical asymptotic efficiency.
+
+## Compilation and Execution
+
+-To compile the program, use:
+
+   ```bash
+$ make speller
+   ```
+
+To run speller, specify a dictionary file and a text file:
+
+   ```bash
+$ ./speller dictionaries/large texts/grimm.txt
+$ ./speller dictionaries/large texts/lalaland.txt
+$ ./speller dictionaries/large texts/constitution.txt
+   ```
+
+
 # **substitution**
+
+This program encrypts plaintext using a substitution cipher. A substitution cipher replaces each letter of the alphabet with a corresponding letter from a provided key.
+
+## Usage
+
+-To run the program, use:
+
+   ```bash
+$ ./substitution key
+   ```
+
+### Input Requirements
+
+-The key must be exactly 26 characters long.
+
+-The key must contain each letter of the alphabet exactly once.
+
+-The key can be uppercase or lowercase, but it must represent a valid mapping of letters.
+
+## Example Runs
+
+### Invalid Key (Too Short)
+
+   ```bash
+$ ./substitution ABC
+   ```
+
+-Key must contain 26 characters.
+
+### Invalid Key (Non-Alphabetic Characters)
+
+   ```bash
+$ ./substitution 1 2 3
+Usage: ./substitution key
+   ```
+
+### Valid Key Example
+
+   ```bash
+$ ./substitution YTNSHKVEFXRBAUQZCLWDMIPGJO
+plaintext:  Hello!
+ciphertext: Ehbbq!
+   ```
 
 # **tideman**
 
+This program implements the Tideman (Ranked Pairs) voting method, a ranked-choice voting system that guarantees the election of the Condorcet winner, if one exists. The program constructs a directed graph of candidate preferences and determines the winner based on the strongest victories while avoiding cycles.
+
+## Usage
+
+-To compile the program, use:
+
+   ```bash
+$ make tideman
+   ```
+
+-To run the program, provide candidate names as arguments:
+
+   ```bash
+$ ./tideman Julia Bob Zack
+   ```
+
+-The program will then prompt for voter preferences:
+
+   ```bash
+Number of voters: 5
+Rank 1: Julia
+Rank 2: Zack
+Rank 3: Bob
+...
+   ```
+
+-After all votes are entered, the program determines and prints the election winner.
+
+## How It Works
+
+-The Tideman method follows three main steps:
+
+### Tally:
+
+-Count voter preferences for each pair of candidates.
+
+-Determine the winner for each head-to-head matchup.
+
+### Sort:
+
+-Rank candidate pairs in decreasing order of victory strength (based on the number of voters preferring one candidate over another).
+
+### Lock:
+
+-Construct the candidate graph by locking in victories, avoiding cycles.
+
+-The winner is the source of the graph (i.e., the candidate with no arrows pointing at them).
+
+## Example Run
+
+   ```bash
+$ ./tideman Julia Bob Zack
+Number of voters: 5
+Rank 1: Julia
+Rank 2: Zack
+Rank 3: Bob
+...
+Charlie
+   ```
+
+-This means Zack is declared the winner based on the ranked preferences.
+
 # **trivia**
 
+The Trivia Web App is an interactive quiz built using HTML, CSS, and JavaScript. Users can answer multiple-choice and free-response trivia questions, receiving immediate feedback on their answers.
+
+## Running the Application
+
+-To start the trivia application, navigate to the project folder and run:
+
+   ```bash
+$ http-server
+   ```
+
+-Click on the first link presented by http-server to open your webpage in a new tab.
+
 # **volume**
+
+This program adjusts the volume of a given WAV audio file by scaling each audio sample by a specified factor. This program demonstrates basic audio processing by modifying the amplitude of the waveform.
+
+## Compilation
+
+-To compile the program, run:
+
+   ```bash
+$ make volume
+   ```
+
+## Usage
+
+-To modify the volume of an audio file, use:
+
+   ```bash
+$ ./volume input.wav output.wav factor
+   ```
+
+### Where:
+
+-input.wav is the original audio file.
+
+-output.wav is the modified audio file.
+
+-factor is a numerical value to scale the volume:
+
+->1.0 increases the volume.
+
+-<1.0 decreases the volume.
+
+-1.0 keeps the volume unchanged.
+
+## Example Commands
+
+-Increase volume:
+
+   ```bash
+$ ./volume input.wav output.wav 2.0
+   ```
+
+-Decrease volume:
+
+   ```bash
+$ ./volume input.wav output.wav 0.5
+   ```
+
+-Incorrect usage:
+
+   ```bash
+$ ./volume
+Usage: ./volume input.wav output.wav factor
+   ```
+
+-Invalid file format:
+
+   ```bash
+$ ./volume input.mp3 output.wav 2.0
+Could not open file.
+   ```
 
 # **hello.c**
 
